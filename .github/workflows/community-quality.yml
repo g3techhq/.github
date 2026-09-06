@@ -30,7 +30,13 @@ jobs:
       - name: Install pinned validation tools
         uses: taiki-e/install-action@7b8d4719ee4aaa279bdf55df38dacb9ebfe12a6c # v2.87.6
         with:
-          tool: just@1.58.0,typos-cli@1.50.1,actionlint@1.7.12
+          tool: just@1.58.0,typos-cli@1.50.1
+
+      - name: Install actionlint
+        shell: bash
+        run: |
+          go install github.com/rhysd/actionlint/cmd/actionlint@v1.7.12
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
       - name: Show tool versions
         run: |
