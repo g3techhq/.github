@@ -1,0 +1,55 @@
+name: Bug report
+description: Report reproducible behavior that is not working as intended.
+title: "bug: "
+labels:
+  - bug
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for taking the time to provide a useful, reproducible report.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Which released version or commit contains the problem?
+      placeholder: v0.1.0 or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: Include the operating system, browser or native target, and relevant toolchain versions.
+      placeholder: Windows 11, Chrome 140, Rust 1.95.0
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and include non-sensitive logs or screenshots when useful.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide the smallest sequence or repository that reliably demonstrates the problem.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: This report contains no credentials, private data, or undisclosed vulnerability details.
+          required: true
