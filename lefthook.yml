@@ -1,0 +1,18 @@
+pre-commit:
+  parallel: true
+  commands:
+    spelling:
+      glob: "*.{md,yml,yaml,json,toml}"
+      run: typos {staged_files}
+    whitespace:
+      run: git diff --cached --check
+
+commit-msg:
+  commands:
+    conventional-commit:
+      run: cog verify --file {1}
+
+pre-push:
+  commands:
+    quality:
+      run: just ci

@@ -1,0 +1,9 @@
+[files]
+extend-exclude = []
+
+[default.extend-words]
+dioxus = "dioxus"
+partee = "partee"
+surreal = "surreal"
+surrealdb = "surrealdb"
+tourney = "tourney"
