@@ -1,7 +1,7 @@
 # G3 Tech
 
-G3 Tech builds thoughtful, Rust-first software and the open-source Dioxus infrastructure behind it.
+G3 Tech builds mostly Rust software and using a Dioxus and SurrealDB stack.
 
-Our shared libraries focus on adaptive interfaces, native platform integration, and navigation that feels at home on the web, iOS, and Android. Public projects and documentation will appear here as they are ready for stable use.
+Our G3 Stack additionally uses our component library(g3-ui), route transition library, and native plugin library.
 
-We value clear APIs, accessible experiences, secure defaults, reproducible builds, and respectful collaboration.
+This makes it simple to make multi platform ui applications.
