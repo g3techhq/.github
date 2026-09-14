@@ -28,7 +28,7 @@ jobs:
           persist-credentials: false
 
       - name: Install pinned validation tools
-        uses: taiki-e/install-action@7b8d4719ee4aaa279bdf55df38dacb9ebfe12a6c # v2.87.6
+        uses: taiki-e/install-action@9534c84618278caac52cb373bb164ed464dbd8af # v2.87.11
         with:
           tool: just@1.58.0,typos-cli@1.50.1
 
